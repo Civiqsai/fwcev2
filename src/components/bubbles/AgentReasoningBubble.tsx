@@ -28,7 +28,7 @@ export const AgentReasoningBubble = (props: Props) => {
     if (botMessageEl) {
       botMessageEl.innerHTML = Marked.parse(`**✅ ${props.agentName}** \n\n${props.agentMessage}`);
       botMessageEl.querySelectorAll('a').forEach((link) => {
-        link.target = '_blank';
+        link.target = '_self';
       });
     }
   });
